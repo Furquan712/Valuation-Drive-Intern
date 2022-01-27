@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuation-Drive</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+     <!-- font-awesome cdn link    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custom css files link -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <!-- header section start -->
+      <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+    
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                
+                   <!-- header section start -->
+    <header>
+
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"><i class="fas fa-user-graduate"></i>Valuation Drive</a>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Screen</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    
+        <div id="login" class="fas fa-user-circle"></div>
+    
+    </header>
+            </ul>
+        </nav>
+    
+        <div id="login" class="fas fa-user-circle"></div>
+    
+    </header> 
+    <!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+    <!-- Home section start -->
+    <section>
+        <main>
+            <div class="container" style="padding: 100px;">
+                <h1>Valuation-drive</h1>
+                <h2>(Stock Market Analysis )</h2>
+                <div class="search-box">
+                    <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                    </form>
+                    <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+                     xml:space="preserve">
+                  <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+                  <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+                </svg>
+                    <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+                </div>
+        <div>
+            <a href="#"><button class="mybtn" id="mybtn">Contact Us</button></a>
+        </div>
+            </div>
+        </main>
+    </section>
+
+    <script>
+        console.log('This is my tutorial 42');
+
+// Button with id myBtn
+let myBtn = document.getElementById("myBtn");
+
+// div with id content 
+let content = document.getElementById("content");
+
+// function getData(){
+//     console.log("Started getData")
+//     url = "harry.txt";
+//     fetch(url).then((response)=>{
+//         console.log("Inside first then")
+//         return response.text();
+//     }).then((data)=>{
+//         console.log("Inside second then")
+//         console.log(data);
+//     })
+// }
+
+function getData(){
+    console.log("Started getData")
+    url = " https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=IBM&apikey=12GJ2EJCAYTKMVS3";
+    
+    fetch(url).then((response)=>{
+        console.log("Inside first then")
+        return response.json();
+    }).then((data)=>{
+        console.log("Inside second then")
+        console.log(data);
+    })
+}
+
+
+function postData(){
+    url = " https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=IBM&apikey=12GJ2EJCAYTKMVS3";
+    data = '{" annualReports"}'
+    params = {
+        method:'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    }
+    fetch(url, params).then(response=> response.json())
+    .then(data => console.log(data)
+    )
+}
+
+// console.log("Before running getData")
+// getData()
+// console.log("After running getData")
+postData()
+    </script>
+    <!-- jQuery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- custom js file link -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
