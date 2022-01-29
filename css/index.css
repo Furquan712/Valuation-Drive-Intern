@@ -1,5 +1,5 @@
 :root{
-    --gradient: linear-gradient(90deg, #26c993, #3a8c71);
+    --gradient: linear-gradient(90deg, #26c993, #0f3227);
 }
 
 *{
@@ -31,7 +31,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:linear-gradient(#682c7c, #2d295c);
+    background:linear-gradient(90deg, #26c993, #0f3227);
 }
 
 section{
@@ -254,13 +254,13 @@ html, body {
     padding: 0 26px;
     width: 100%;
     height: 100%;
-    background: rgba(154,57,163,1);
-    background: -moz-linear-gradient(-45deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(154,57,163,1)), color-stop(100%, rgba(65,103,168,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%);
-    background: linear-gradient(135deg, rgba(154,57,163,1) 0%, rgba(65,103,168,1) 100%);
+    background: rgb(212, 231, 219);
+    background: -moz-linear-gradient(-45deg, rgb(146, 185, 163) 0%, rgb(210, 217, 228) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(165, 224, 207)), color-stop(100%, rgba(65,103,168,1)));
+    background: -webkit-linear-gradient(-45deg, rgb(136, 190, 158) 0%, rgb(133, 192, 174) 100%);
+    background: -o-linear-gradient(-45deg, rgb(149, 197, 179) 0%, rgb(176, 224, 195) 100%);
+    background: -ms-linear-gradient(-45deg, rgb(172, 226, 195) 0%, rgb(149, 211, 190) 100%);
+    background: linear-gradient(135deg, rgb(145, 202, 162) 0%, rgb(188, 241, 230) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a39a3', endColorstr='#4167a8', GradientType=1 );
   }
   h1 {
@@ -270,6 +270,7 @@ html, body {
     font-size: 4.92em;
     font-weight: 600;
     letter-spacing: -0.055em;
+    color: #10392c;
   }
   h2 {
     display: block;
@@ -278,6 +279,7 @@ html, body {
     font-weight: 400;
     font-size: 2.25em;
     letter-spacing: -0.015em;
+    color: #10392c;
   }
   .container {
     position: relative;
@@ -285,6 +287,7 @@ html, body {
     padding: 0;
     width: 100%;
     max-width: 840px;
+    color: #10392c;
   }
   .search-box {
     position: relative;
@@ -293,6 +296,7 @@ html, body {
     height: 60px;
     border-radius: 120px;
     margin: 0 auto;
+    color: #10392c;
   }
   .search-icon, .go-icon {
     position: absolute;
@@ -301,6 +305,7 @@ html, body {
     width: 86px;
     line-height: 61px;
     text-align: center;
+    color: #10392c;
   }
   .search-icon {
     left: 0;
@@ -319,12 +324,14 @@ html, body {
     -webkit-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
     -moz-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
     -o-transition: transform 400ms 220ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    color: #10392c;
   }
   .si-rotate {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+    color: #10392c;
   }
   .go-icon {
     right: 0;
@@ -420,7 +427,7 @@ html, body {
   }
   
   body {
-    background:  linear-gradient(90deg, #682c7c, #2d295c);
+    background:  linear-gradient(90deg, #bcefde, #eff5f3);
     font-size: 12px;
   }
   
