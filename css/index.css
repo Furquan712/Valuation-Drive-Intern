@@ -370,7 +370,7 @@ html, body {
   }
   .border {
     fill: none;
-    stroke: #FFFFFF;
+    stroke: #10392c;
     stroke-width: 5;
     stroke-miterlimit: 10;
   }
@@ -645,6 +645,7 @@ html, body {
       display: none;
     }
   }
+  
   .footer{
     background:#333;
 }

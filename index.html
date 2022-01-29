@@ -34,8 +34,13 @@ h2{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: white;
+    color:  #10392c;
+    font-weight: bold;
     padding: 30px 0;
+}
+
+body > main > section.bg{
+    background-image: url(/images/25p.jpg);
 }
 
   .table-wrapper{
@@ -197,7 +202,7 @@ h2{
                 <div class="search-box">
                     <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
                     <form action="" class="search-form">
-                        <input type="text" placeholder="Search" id="search" autocomplete="off">
+                        <input type="text" style="color: #10392c;" placeholder="Search" id="search" autocomplete="off">
                     </form>
                     <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
                      xml:space="preserve">
@@ -324,7 +329,8 @@ h2{
             </table>
         </div>
     </section>
-  </main>
+     
+   
     <!-- Footer page start  -->
          <!-- Footer section start -->
      <div class="footer">
@@ -359,9 +365,9 @@ h2{
         <h1 class="credit">created by <a href="#">Syed.M.Furquan,</a> all rights reserved. </h1>
     
     </div>
-    
+ 
     <!-- footer section ends -->
-     
+</main> 
   <script>
     function add(){
       var new_chq_no = parseInt($('#total_chq').val())+1;
